@@ -2,5 +2,6 @@ language: php
 php:
  - 7.3
 install: 
- - php vendor/vendors.php
  - composer install
+script:
+ - ./vendor/bin/phpunit tests
